@@ -1,0 +1,100 @@
+/* CSS for Grandma's Lemon Meringue Pie Recipe Page */
+
+/* Reset default margin and padding */
+body, h1, h2, h3, ul, ol, li, p, pre {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Georgia, Garamond, serif;
+    font-size: 11pt;
+    color: #404040;
+    background-color: #FFFFFF;
+}
+
+h1, h2, h3 {
+    font-family: 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+    color: #A4A400;
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 22pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    font-size: 18pt;
+    font-weight: normal;
+}
+
+ul, ol {
+    margin-left: 20px;
+    list-style-type: none;
+}
+
+a {
+    color: #A4A400;
+}
+
+abbr[title] {
+    text-decoration: underline;
+    cursor: help;
+}
+
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+blockquote {
+    margin-left: 40px;
+    background-color: #FFFFA8;
+    padding: 5px;
+}
+
+pre {
+    font-family: monospace;
+    white-space: pre-wrap;
+    margin-top: 20px;
+}
+
+img {
+	float left;
+    
+    margin: 20px 2000px 20px 0px;
+}
+
+
+.black-bullets{
+ list-style-type: disc;
+}
+
+.hollow-bullets {
+  list-style-type: circle; 
+}
+/* Extra Features */
+
+body {
+    background-image: url('silverware.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+ul, ol {
+    list-style-image: url('pie-icon.gif');
+}
+
+h2 {
+    background-color: #F0F0F0;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 10px 0;
+}
