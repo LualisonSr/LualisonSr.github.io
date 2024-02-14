@@ -22,8 +22,6 @@ document.querySelectorAll('.dish img').forEach(img => {
 });
 
 
-// ... your existing JavaScript code ... 
-
 // Get the button element
 const mealPlanButton = document.getElementById('mealPlanButton');
 
