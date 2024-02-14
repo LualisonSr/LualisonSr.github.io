@@ -10,9 +10,9 @@ const menuItems = [
     { id: 9, name: "Lasagna  ", image: "lazana.jpg", price:   17.00 },    
 ];
 
-let cart = []; // Initialize your cart as an empty array
+let cart = []; 
 
-// Function to generate and display menu items
+
 function displayMenuItems() {
     const menuList = document.getElementById("menu-list");
     menuList.innerHTML = ""; // Clear existing items
@@ -32,7 +32,7 @@ function displayMenuItems() {
         const itemPrice = document.createElement("p");
         itemPrice.textContent = `$${item.price.toFixed(2)}`;
 
-        // Add an "Add to Cart" button
+    
         const addToCartButton = document.createElement('button');
         addToCartButton.textContent = 'Add to Cart';
         addToCartButton.addEventListener('click', () => {
