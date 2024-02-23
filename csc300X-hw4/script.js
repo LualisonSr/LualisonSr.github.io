@@ -11,7 +11,7 @@
                 const computerChoice = choices[Math.floor(Math.random() * choices.length)];
                 const result = determineWinner(playerChoice, computerChoice);
 
-                computerImage.src = computerChoice + 'csc300X-hw4/.PNG';
+                computerImage.src = computerChoice + '.PNG';
 
                 document.getElementById('result').textContent = result.message;
                 updateScoreboard(result.outcome);
