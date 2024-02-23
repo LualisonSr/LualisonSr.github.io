@@ -1,0 +1,50 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    margin: 20px 0;
+}
+
+#game-images {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-image {
+    width: 150px; /* Adjust the size of your images */
+    margin: 0 10px;
+    border: 2px solid #ddd; /* A light border for each image */
+    border-radius: 10px; /* Rounded corners for styling */
+    padding: 10px;
+    transition: transform 0.2s; /* Smooth transformation upon hover */
+}
+
+.game-image:hover {
+    transform: scale(1.1); /* Scales the image to 110% when you hover over it */
+    border-color: #333; /* Changes border color on hover */
+}
+
+#result {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #555;
+}
+
+/* Adding a bit of responsiveness */
+@media (max-width: 600px) {
+    #game-images {
+        flex-direction: column;
+    }
+
+    .game-image {
+        margin: 10px 0; /* Stack images vertically on smaller screens */
+    }
+}
