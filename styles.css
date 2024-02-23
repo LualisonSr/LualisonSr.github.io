@@ -1,97 +1,50 @@
 body {
-  font-family: 'Open Sans', sans-seri; /* More readable font */
-  line-height: 1.7; /* Increased line height for readability */
-  color: #333; 
-  background: #f4f4f4; 
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 20px;
 }
 
-h1, h2 {
-  color: #222; /* Slightly darker heading color */
+h1 {
+    color: #333;
+    margin: 20px 0;
 }
 
-header {
-  margin-bottom: 30px; /* Space between header and content */
+#game-images {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Restaurant Section Styling */
-.restaurants { 
-  list-style: none; /* Remove default bullet points */
-  margin: 0;
-  padding: 0;
-  text-align: center; /* Center the restaurant names */
-}
-
-.restaurants li {
-  display: inline-block;
-  margin: 0 10px;  /* Add spacing between restaurant names */
-}
-
-/* Dish Gallery Styling */
-.dish-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px; 
-  margin-bottom: 20px;
-}
-#mealPlanButton {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  padding: 8px 15px;
-  background-color: #4CAF50; /* Example color - change as needed */
-  color: white;
-  border: none;
-  border-radius: 5px; 
-  cursor: pointer; 
-}
-.dish {
-  flex: 0 1 300px; /* Flexible sizing, minimum width of 300px */
-  margin: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
-  border-radius: 5px;   /* Slightly rounded edges */ 
-  transition: transform 0.5s ease; /*  Smooth transition */
-}
-
-.dish img {
-  width: 100%; 
-  height: 200px; /* Set a consistent image height */
-  object-fit: cover; /* Maintain aspect ratio */
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.dish-description {
-  padding: 10px; 
-}
-
-/* Hover Effects */
-.dish:hover {
-  transform: scale(1.02); /* Subtle zoom effect on hover*/
-}
-
-/* Selected Dish Styles */
-.selected-dish {
-  transform: scale(1.2); /* Larger zoom effect for selected dish */
-  z-index: 10; 
-}
-
-.dish-description {
+.game-image {
+    width: 150px; /* Adjust the size of your images */
+    margin: 0 10px;
+    border: 2px solid #ddd; /* A light border for each image */
+    border-radius: 10px; /* Rounded corners for styling */
     padding: 10px;
-    display: none; /* Hidden by default */
+    transition: transform 0.2s; /* Smooth transformation upon hover */
 }
 
-.dish:hover .dish-description {
-    display: block; /* Show on hover of the parent .dish */
-    position: absolute; /* Allow positioning relative to dish container */
-    bottom: 0;          /* Adjust as needed */
-    left: 0;           /* Adjust as needed */
-    background-color: white; 
-    padding: 15px; 
-    border-radius: 5px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);   
+.game-image:hover {
+    transform: scale(1.1); /* Scales the image to 110% when you hover over it */
+    border-color: #333; /* Changes border color on hover */
 }
 
+#result {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #555;
+}
+
+/* Adding a bit of responsiveness */
+@media (max-width: 600px) {
+    #game-images {
+        flex-direction: column;
+    }
+
+    .game-image {
+        margin: 10px 0; /* Stack images vertically on smaller screens */
+    }
+}
