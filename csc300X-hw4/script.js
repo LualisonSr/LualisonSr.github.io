@@ -11,7 +11,7 @@
                 const computerChoice = choices[Math.floor(Math.random() * choices.length)];
                 const result = determineWinner(playerChoice, computerChoice);
 
-                computerImage.src = computerChoice + '.PNG';
+                computerImage.src = 'csc300X-hw4/' + computerChoice + '.PNG';
 
                 document.getElementById('result').textContent = result.message;
                 updateScoreboard(result.outcome);
@@ -51,5 +51,5 @@
             document.getElementById('loss-count').textContent = 0;
             document.getElementById('tie-count').textContent = 0;
             document.getElementById('result').textContent = '';
-            document.getElementById('computer-image').src = "question-mark.PNG";
+            document.getElementById('computer-image').src = "csc300X-hw4/question-mark.PNG";
         }
