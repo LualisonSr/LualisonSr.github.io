@@ -4,7 +4,7 @@
 
         function play(playerChoice) {
             const computerImage = document.getElementById('computer-image');
-            computerImage.src = "question-mark.PNG";
+            computerImage.src = "csc300X-hw4/question-mark.PNG";
 
             setTimeout(() => {
                 const choices = ['rock', 'paper', 'scissors'];
