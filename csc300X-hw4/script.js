@@ -4,14 +4,14 @@
 
         function play(playerChoice) {
             const computerImage = document.getElementById('computer-image');
-            computerImage.src = "./csc300X-hw4/question-mark.PNG";
+            computerImage.src = "question-mark.PNG";
 
             setTimeout(() => {
                 const choices = ['rock', 'paper', 'scissors'];
                 const computerChoice = choices[Math.floor(Math.random() * choices.length)];
                 const result = determineWinner(playerChoice, computerChoice);
 
-                computerImage.src = 'csc300X-hw4/' + computerChoice + '.PNG';
+                computerImage.src = computerChoice + '.PNG';
 
                 document.getElementById('result').textContent = result.message;
                 updateScoreboard(result.outcome);
@@ -51,5 +51,5 @@
             document.getElementById('loss-count').textContent = 0;
             document.getElementById('tie-count').textContent = 0;
             document.getElementById('result').textContent = '';
-            document.getElementById('computer-image').src = "./csc300X-hw4/question-mark.PNG";
+            document.getElementById('computer-image').src = "question-mark.PNG";
         }
